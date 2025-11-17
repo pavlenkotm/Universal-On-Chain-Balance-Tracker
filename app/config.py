@@ -56,6 +56,62 @@ EVM_NETWORKS = {
         "native_token": "MATIC",
         "decimals": 18,
         "explorer": "https://polygonscan.com"
+    },
+    "avalanche": {
+        "name": "Avalanche C-Chain",
+        "chain_id": 43114,
+        "rpc_url": os.getenv("AVALANCHE_RPC", "https://api.avax.network/ext/bc/C/rpc"),
+        "native_token": "AVAX",
+        "decimals": 18,
+        "explorer": "https://snowtrace.io"
+    },
+    "fantom": {
+        "name": "Fantom Opera",
+        "chain_id": 250,
+        "rpc_url": os.getenv("FANTOM_RPC", "https://rpc.ftm.tools"),
+        "native_token": "FTM",
+        "decimals": 18,
+        "explorer": "https://ftmscan.com"
+    },
+    "cronos": {
+        "name": "Cronos",
+        "chain_id": 25,
+        "rpc_url": os.getenv("CRONOS_RPC", "https://evm.cronos.org"),
+        "native_token": "CRO",
+        "decimals": 18,
+        "explorer": "https://cronoscan.com"
+    },
+    "gnosis": {
+        "name": "Gnosis Chain",
+        "chain_id": 100,
+        "rpc_url": os.getenv("GNOSIS_RPC", "https://rpc.gnosischain.com"),
+        "native_token": "xDAI",
+        "decimals": 18,
+        "explorer": "https://gnosisscan.io"
+    },
+    "zksync": {
+        "name": "zkSync Era",
+        "chain_id": 324,
+        "rpc_url": os.getenv("ZKSYNC_RPC", "https://mainnet.era.zksync.io"),
+        "native_token": "ETH",
+        "decimals": 18,
+        "explorer": "https://explorer.zksync.io"
+    },
+    "linea": {
+        "name": "Linea",
+        "chain_id": 59144,
+        "rpc_url": os.getenv("LINEA_RPC", "https://rpc.linea.build"),
+        "native_token": "ETH",
+        "decimals": 18,
+        "explorer": "https://lineascan.build"
+    },
+    "scroll": {
+        "name": "Scroll",
+        "chain_id": 534352,
+        "rpc_url": os.getenv("SCROLL_RPC", "https://rpc.scroll.io"),
+        "native_token": "ETH",
+        "decimals": 18,
+        "explorer": "https://scrollscan.com"
     }
 }
 

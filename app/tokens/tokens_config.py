@@ -207,6 +207,152 @@ POPULAR_TOKENS: Dict[str, List[Dict[str, str]]] = {
             "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
             "decimals": "18"
         }
+    ],
+    "avalanche": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+            "decimals": "6"
+        },
+        {
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WAVAX",
+            "name": "Wrapped AVAX",
+            "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+            "decimals": "18"
+        },
+        {
+            "symbol": "WETH.e",
+            "name": "Wrapped Ether",
+            "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+            "decimals": "18"
+        },
+        {
+            "symbol": "WBTC.e",
+            "name": "Wrapped BTC",
+            "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
+            "decimals": "8"
+        }
+    ],
+    "fantom": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WFTM",
+            "name": "Wrapped Fantom",
+            "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+            "decimals": "18"
+        },
+        {
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+            "decimals": "18"
+        },
+        {
+            "symbol": "WBTC",
+            "name": "Wrapped BTC",
+            "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+            "decimals": "8"
+        }
+    ],
+    "cronos": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+            "decimals": "6"
+        },
+        {
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "address": "0x66e428c3f67a68878562e79A0234c1F83c208770",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WCRO",
+            "name": "Wrapped CRO",
+            "address": "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+            "decimals": "18"
+        }
+    ],
+    "gnosis": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
+            "decimals": "6"
+        },
+        {
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "address": "0x4ECaBa5870353805a9F068101A40E0f32ed605C6",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "address": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+            "decimals": "18"
+        }
+    ],
+    "zksync": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+            "decimals": "6"
+        },
+        {
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "address": "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "address": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+            "decimals": "18"
+        }
+    ],
+    "linea": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
+            "decimals": "18"
+        }
+    ],
+    "scroll": [
+        {
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+            "decimals": "6"
+        },
+        {
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "address": "0x5300000000000000000000000000000000000004",
+            "decimals": "18"
+        }
     ]
 }
 
