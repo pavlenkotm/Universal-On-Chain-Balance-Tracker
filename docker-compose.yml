@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  balance-tracker-api:
+    build: .
+    container_name: balance-tracker-api
+    ports:
+      - "8000:8000"
+    environment:
+      # EVM Networks
+      - ETHEREUM_RPC=${ETHEREUM_RPC:-https://eth.llamarpc.com}
+      - ARBITRUM_RPC=${ARBITRUM_RPC:-https://arb1.arbitrum.io/rpc}
+      - OPTIMISM_RPC=${OPTIMISM_RPC:-https://mainnet.optimism.io}
+      - BASE_RPC=${BASE_RPC:-https://mainnet.base.org}
+      - BNB_RPC=${BNB_RPC:-https://bsc-dataseed.binance.org}
+      - POLYGON_RPC=${POLYGON_RPC:-https://polygon-rpc.com}
+      # Solana Network
+      - SOLANA_RPC=${SOLANA_RPC:-https://api.mainnet-beta.solana.com}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    command: python api.py --host 0.0.0.0 --port 8000
+
+  # Optional: Development mode with auto-reload
+  balance-tracker-dev:
+    build: .
+    container_name: balance-tracker-dev
+    ports:
+      - "8001:8000"
+    environment:
+      - ETHEREUM_RPC=${ETHEREUM_RPC:-https://eth.llamarpc.com}
+      - ARBITRUM_RPC=${ARBITRUM_RPC:-https://arb1.arbitrum.io/rpc}
+      - OPTIMISM_RPC=${OPTIMISM_RPC:-https://mainnet.optimism.io}
+      - BASE_RPC=${BASE_RPC:-https://mainnet.base.org}
+      - BNB_RPC=${BNB_RPC:-https://bsc-dataseed.binance.org}
+      - POLYGON_RPC=${POLYGON_RPC:-https://polygon-rpc.com}
+      - SOLANA_RPC=${SOLANA_RPC:-https://api.mainnet-beta.solana.com}
+    volumes:
+      - .:/app
+    command: python api.py --host 0.0.0.0 --port 8000 --reload
+    profiles:
+      - dev
